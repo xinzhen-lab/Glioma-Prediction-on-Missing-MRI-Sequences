@@ -6,8 +6,13 @@ A disentangled-learning based incomplete sequence completion enhanced robust net
 # DISCERN
 The DISCERN is capable of handling different clinical scenarios involving the missing of any one or several MRI sequences. Radiomics features were respectively extracted from various MRI sequences and seamlessly fed to train the DISCERN model, with missing feature values in the absent sequences initialized with zeros. For each MRI sequence, an encoder network is built to disentangle and learn hidden representations capturing both the sequence-specific and sequence-neutral components. These representations were then passed through a decoder network to impute missing values in patient samples with the absent sequence. This mechanism for completing missing sequences facilitated the acquisition of more representative representations. Subsequently, the sequence-specific and sequence-neutral components from all MRI sequences were integrated to produce the fused representation, which was finally input into a prediction network dedicated to the downstream tasks of glioma grading or IDH status prediction.  In general, DISCERN exhibited tolerance to varying missing rates of sequences ranging from 10% to 30%, yielding satisfactory prediction performance in both GBM grading (AUC:0.8843 to 0.9246) and IDH prediction (AUC: 0.8181 to 0.8655).
 
+
+
+
+
+
 <p align="center">
-  <img src ="https://github.com/xinzhen-lab/GBM-Prediction-on-Missing-MRI-Sequences/assets/131331281/8c7316c9-c539-47af-8d93-5d38a2666416">
+  <img src ="https://github.com/xinzhen-lab/Glioma-Prediction-on-Missing-MRI-Sequences/assets/131331281/084a9d85-71f4-4a21-ba91-63645202987b">
 </p>
 
 
