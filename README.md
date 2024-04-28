@@ -10,7 +10,9 @@ The DISCERN is capable of handling different clinical scenarios involving the mi
 ![2](https://github.com/xinzhen-lab/GBM-Prediction-on-Missing-MRI-Sequences/assets/131331281/8c7316c9-c539-47af-8d93-5d38a2666416)
 
 
-
+<p align="center">
+  <img width="460" height="300" src="https://picsum.photos/460/300">
+</p>
 
 # Model training & validation
 The DISCERN is trained and validated on datasets collected from four institutions, including the First Affiliated Hospital of Zhengzhou University (FAHZZU), the Nanfang Hospital of Southern Medical University (NFHSMU), the Second Affiliated Hospital of South China University of Technology (SAHSCUT), and the Beijing Tiantan Hospital (BJTTH), as well as one public database: The Cancer Imaging Archive (TCIA). The training (n=1440, 80%) and internal validation (n=456, 20%) sets consisted of patients enrolled from FAHZZU, NFHSMU, and SAHSCUT in accordance with the WHO 2016 criteria. The two independent external validation sets were collected from TCIA and BJTTH based on the WHO 2021.
