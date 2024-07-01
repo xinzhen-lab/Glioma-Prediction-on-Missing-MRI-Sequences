@@ -257,7 +257,7 @@ class Completion_model(Model):
             kl_loss_ = (-0.5 * tf.reduce_mean(1 + z_log_vars_private_[fusion_idx[0]] - tf.square(z_means_private_[fusion_idx[0]]) - tf.exp(z_log_vars_private_[fusion_idx[0]]))) \
                       + (-0.5 * tf.reduce_mean(1 + z_log_vars_shared_[fusion_idx[0]] - tf.square(z_means_shared_[fusion_idx[0]]) - tf.exp(z_log_vars_shared_[fusion_idx[0]])))
             reconstruction_loss_ = tf.reduce_mean(tf.sqrt(tf.keras.losses.mean_squared_error(x_[fusion_idx[0]], Decoders_out_[fusion_idx[0]])))
-            com_spec_loss_ = com_loss_ / (spe_loss_ + epsilon)  # 防止除0
+            com_spec_loss_ = com_loss_ / (spe_loss_ + epsilon)  
 
         "The classification loss"
         classification_loss_ = tf.reduce_mean(tf.keras.losses.binary_crossentropy(y_, predict_out_))
@@ -448,7 +448,7 @@ if __name__ == '__main__':
     X_T2, y_T2 = data_T2[:, 2:111], (data_T2[:, 1]).astype(int)
     origin_label = [y_T1, y_T1ce, y_T2, y_Flair]
 
-    data_Flair_test = (pd.read_csv('D:/Glioma/2-Features/test_files/Grading/Test/T2-FLAIR.csv')).values  # 分级用combat，IDH用原始的
+    data_Flair_test = (pd.read_csv('D:/Glioma/2-Features/test_files/Grading/Test/T2-FLAIR.csv')).values  
     data_T1ce_test = (pd.read_csv('D:/Glioma/2-Features/test_files/Grading/Test/CE-T1WI.csv')).values
     data_T1_test = (pd.read_csv('D:/Glioma/2-Features/test_files/Grading/Test/T1WI.csv')).values
     data_T2_test = (pd.read_csv('D:/Glioma/2-Features/test_files/Grading/Test/T2WI.csv')).values
@@ -496,7 +496,7 @@ if __name__ == '__main__':
         "The missing index of train"
         missing_idxs_tr = Generate_missing_data(N, M, missing_percentages)
         missing_datas_tr = preprocess_data([X_T1, X_T1ce, X_T2, X_Flair], fusion_idx, missing_idxs_tr)
-        new_X_T1, new_X_T1ce, new_X_T2, new_X_Flair = missing_datas_tr[0], missing_datas_tr[1], missing_datas_tr[2], missing_datas_tr[3]  # 4个序列中，部分序列是缺失的
+        new_X_T1, new_X_T1ce, new_X_T2, new_X_Flair = missing_datas_tr[0], missing_datas_tr[1], missing_datas_tr[2], missing_datas_tr[3]  
 
         "The missing index of test"
         missing_idxs_te = Generate_missing_data(N_test, M, missing_percentages)
