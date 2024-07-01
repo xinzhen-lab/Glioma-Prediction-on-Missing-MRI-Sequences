@@ -1,6 +1,6 @@
 # Leveraging the Untapped Potentials of Incomplete MRI Sequences for Glioma Grading and IDH Mutation Status Prediction: A Large-Scale Multicenter Cohort Study
 A disentangled-learning based incomplete sequence completion enhanced robust network (DISCERN) is developed to impute and integrate incomplete MRI sequences for glioma grading and IDH mutation status prediction.
-![1](https://github.com/xinzhen-lab/GBM-Prediction-on-Missing-MRI-Sequences/assets/131331281/5c958256-b2f3-4866-bba3-80165840833d)
+![1](https://github.com/xinzhen-lab/Glioma-Prediction-on-Missing-MRI-Sequences/assets/131331281/633a6026-fd9d-4a04-a61b-265f15e95844)
 
 
 # DISCERN
@@ -12,7 +12,7 @@ The DISCERN is capable of handling different clinical scenarios involving the mi
 
 
 <p align="center">
-  <img src ="https://github.com/xinzhen-lab/Glioma-Prediction-on-Missing-MRI-Sequences/assets/131331281/084a9d85-71f4-4a21-ba91-63645202987b">
+  <img src ="https://github.com/xinzhen-lab/Glioma-Prediction-on-Missing-MRI-Sequences/assets/131331281/fffbb326-1868-4e5d-8430-7ff17c1b81ec">
 </p>
 
 
