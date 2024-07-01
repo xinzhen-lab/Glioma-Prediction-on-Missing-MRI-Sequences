@@ -30,7 +30,7 @@ shap==0.39.0
 matplotlib==2.2.5  
 
 # Usage
-Make sure that all the required packages are installed, run the 'DISCERN.py' to check. if all required packages are properly installed, it will return the evaluation metrics of each iteration, including the area under the receiver operating characteristic (ROC) curve (AUC), accuracy (ACC), sensitivity (SEN), specificity (SPE), positive predictive value (PPV), negative predictive value (NPV), F1 score, and total loss. The feature files for grading and IDH mutation status used for testing 'DISCERN.py' are provided in the 'test_files' folder.
+Make sure that all the required packages are installed, run the 'DISCERN.py' to check. if all required packages are properly installed, it will return the evaluation metrics of each iteration, including the area under the receiver operating characteristic (ROC) curve (AUC), accuracy (ACC), sensitivity (SEN), specificity (SPE), positive predictive value (PPV), negative predictive value (NPV), F1 score, and total loss. The feature files for grading and IDH mutation status used for testing 'DISCERN.py' are provided in the 'test_files' folder. Additionally, 'DISCERN_SHAP_interpretability.py' is built upon 'DISCERN.py' by incorporating SHAP interpretability to quantitatively assess the contribution of each radiomics feature to the model's output.
 ![3](https://github.com/xinzhen-lab/Glioma-Prediction-on-Missing-MRI-Sequences/assets/131331281/150e5a9f-cac4-4476-8ec9-08de50b832db)
 
 # Note
