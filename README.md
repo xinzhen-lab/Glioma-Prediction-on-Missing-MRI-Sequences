@@ -30,7 +30,7 @@ shap==0.39.0
 matplotlib==2.2.5  
 
 # Usage
-Make sure that all the required packages are installed, run the 'DISCERN.py' to check. if all required packages are properly installed, it will return the evaluation metrics of each iteration, including the area under the receiver operating characteristic (ROC) curve (AUC), accuracy (ACC), sensitivity (SEN), specificity (SPE), positive predictive value (PPV), negative predictive value (NPV), and F1 score. 
+Make sure that all the required packages are installed, run the 'DISCERN.py' to check. if all required packages are properly installed, it will return the evaluation metrics of each iteration, including the area under the receiver operating characteristic (ROC) curve (AUC), accuracy (ACC), sensitivity (SEN), specificity (SPE), positive predictive value (PPV), negative predictive value (NPV), F1 score， and total loss. 
 ![3](https://github.com/xinzhen-lab/Glioma-Prediction-on-Missing-MRI-Sequences/assets/131331281/fa3981c4-c564-4055-90d9-4c37b17d331d)
 
 # Note
