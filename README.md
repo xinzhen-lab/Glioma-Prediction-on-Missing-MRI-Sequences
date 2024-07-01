@@ -19,6 +19,18 @@ The DISCERN is capable of handling different clinical scenarios involving the mi
 # Model training & validation
 The DISCERN is trained and validated on datasets collected from four institutions, including the First Affiliated Hospital of Zhengzhou University (FAHZZU), the Nanfang Hospital of Southern Medical University (NFHSMU), the Second Affiliated Hospital of South China University of Technology (SAHSCUT), and the Beijing Tiantan Hospital (BJTTH), as well as one public database: The Cancer Imaging Archive (TCIA). The training (n=1440, 80%) and internal validation (n=456, 20%) sets consisted of patients enrolled from FAHZZU, NFHSMU, and SAHSCUT in accordance with the 2016 4th edition of the WHO classification of the central nervous system tumors (WHO 2016). The two independent external validation sets were collected from TCIA and BJTTH based on the 2021 5th edition of the WHO classification of the central nervous system tumors (WHO 2021).
 
+# Requirements
+Python-3.6.5
+numpy==1.19.0
+pandas==0.25.3
+scikit-learn==0.24.2
+imbalanced-learn==0.7.0
+tensorflow==2.1.0
+shap==0.39.0
+matplotlib==2.2.5
+
+# Usage
+Make sure that all the required packages are installed, run the 'DISCERN.py' to check. if all required packages are properly installed, it will return the evaluation metrics of each iteration, including the area under the receiver operating characteristic (ROC) curve (AUC), accuracy (ACC), sensitivity (SEN), specificity (SPE), positive predictive value (PPV), negative predictive value (NPV), and F1 score. 
 
 # Note
 Other investigators are invited to share their data in order to further improve the generalization capability of the current model. The model should only be used to support clinical diagnosis by health care professionals as a complementary tool for predicting glioma grades and IDH mutation status with incomplete MRI sequences. Any responsibility for using this model and its results will rest solely by the health care professional using the model. Using it you should understand and agree that this tool is not responsible or liable for any claim, loss, or damage resulting from its use. While we try to keep the information on the tool as accurate as possible, we disclaim any warranty concerning its accuracy, timeliness, and completeness, and any other warranty, express or implied, including warranties of merchantability or fitness for a particular purpose.
