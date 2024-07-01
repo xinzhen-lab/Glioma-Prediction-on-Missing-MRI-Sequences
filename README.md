@@ -20,14 +20,14 @@ The DISCERN is capable of handling different clinical scenarios involving the mi
 The DISCERN is trained and validated on datasets collected from four institutions, including the First Affiliated Hospital of Zhengzhou University (FAHZZU), the Nanfang Hospital of Southern Medical University (NFHSMU), the Second Affiliated Hospital of South China University of Technology (SAHSCUT), and the Beijing Tiantan Hospital (BJTTH), as well as one public database: The Cancer Imaging Archive (TCIA). The training (n=1440, 80%) and internal validation (n=456, 20%) sets consisted of patients enrolled from FAHZZU, NFHSMU, and SAHSCUT in accordance with the 2016 4th edition of the WHO classification of the central nervous system tumors (WHO 2016). The two independent external validation sets were collected from TCIA and BJTTH based on the 2021 5th edition of the WHO classification of the central nervous system tumors (WHO 2021).
 
 # Requirements
-Python-3.6.5
-numpy==1.19.0
-pandas==0.25.3
-scikit-learn==0.24.2
-imbalanced-learn==0.7.0
-tensorflow==2.1.0
-shap==0.39.0
-matplotlib==2.2.5
+Python-3.6.5  
+numpy==1.19.0  
+pandas==0.25.3  
+scikit-learn==0.24.2  
+imbalanced-learn==0.7.0  
+tensorflow==2.1.0  
+shap==0.39.0  
+matplotlib==2.2.5  
 
 # Usage
 Make sure that all the required packages are installed, run the 'DISCERN.py' to check. if all required packages are properly installed, it will return the evaluation metrics of each iteration, including the area under the receiver operating characteristic (ROC) curve (AUC), accuracy (ACC), sensitivity (SEN), specificity (SPE), positive predictive value (PPV), negative predictive value (NPV), and F1 score. 
