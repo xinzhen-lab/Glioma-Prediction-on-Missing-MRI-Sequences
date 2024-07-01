@@ -437,10 +437,10 @@ def evalution_metric(y_label, y_probas):
 
 if __name__ == '__main__':
     "Step 1: Load data of the training and test set"
-    data_Flair = (pd.read_csv('D:/Glioma/2-Features/test_files/IDH status/Train/T2-FLAIR.csv')).values
-    data_T1ce = (pd.read_csv('D:/Glioma/2-Features/test_files/IDH status/Train/CE-T1WI.csv')).values
-    data_T1 = (pd.read_csv('D:/Glioma/2-Features/test_files/IDH status/Train/T1WI.csv')).values
-    data_T2 = (pd.read_csv('D:/Glioma/2-Features/test_files/IDH status/Train/T2WI.csv')).values
+    data_Flair = (pd.read_csv('D:/Glioma/2-Features/test_files/Grading/Train/T2-FLAIR.csv')).values
+    data_T1ce = (pd.read_csv('D:/Glioma/2-Features/test_files/Grading/Train/CE-T1WI.csv')).values
+    data_T1 = (pd.read_csv('D:/Glioma/2-Features/test_files/Grading/Train/T1WI.csv')).values
+    data_T2 = (pd.read_csv('D:/Glioma/2-Features/test_files/Grading/Train/T2WI.csv')).values
 
     X_Flair, y_Flair = data_Flair[:, 2:111], (data_Flair[:, 1]).astype(int)
     X_T1ce, y_T1ce = data_T1ce[:, 2:111], (data_T1ce[:, 1]).astype(int)
@@ -448,10 +448,10 @@ if __name__ == '__main__':
     X_T2, y_T2 = data_T2[:, 2:111], (data_T2[:, 1]).astype(int)
     origin_label = [y_T1, y_T1ce, y_T2, y_Flair]
 
-    data_Flair_test = (pd.read_csv('D:/Glioma/2-Features/test_files/IDH status/Test/T2-FLAIR.csv')).values  # 分级用combat，IDH用原始的
-    data_T1ce_test = (pd.read_csv('D:/Glioma/2-Features/test_files/IDH status/Test/CE-T1WI.csv')).values
-    data_T1_test = (pd.read_csv('D:/Glioma/2-Features/test_files/IDH status/Test/T1WI.csv')).values
-    data_T2_test = (pd.read_csv('D:/Glioma/2-Features/test_files/IDH status/Test/T2WI.csv')).values
+    data_Flair_test = (pd.read_csv('D:/Glioma/2-Features/test_files/Grading/Test/T2-FLAIR.csv')).values  # 分级用combat，IDH用原始的
+    data_T1ce_test = (pd.read_csv('D:/Glioma/2-Features/test_files/Grading/Test/CE-T1WI.csv')).values
+    data_T1_test = (pd.read_csv('D:/Glioma/2-Features/test_files/Grading/Test/T1WI.csv')).values
+    data_T2_test = (pd.read_csv('D:/Glioma/2-Features/test_files/Grading/Test/T2WI.csv')).values
     X_Flair_test, y_Flair_test = data_Flair_test[:, 2:111], (data_Flair_test[:, 1]).astype(int)
     X_T1ce_test, y_T1ce_test = data_T1ce_test[:, 2:111], (data_T1ce_test[:, 1]).astype(int)
     X_T1_test, y_T1_test = data_T1_test[:, 2:111], (data_T1_test[:, 1]).astype(int)
@@ -698,7 +698,7 @@ if __name__ == '__main__':
         best_result.append(precision_list_[epoch])
         best_result.append(f1score_list_[epoch])
 
-        # Path = 'D:/Glioma/3-Results/Train and Test (IDH)/Incomplete/' + folder_name +'/missing(0-T1WI)/'+ missing_ratio +'/TCIA'
+        # Path = 'D:/Glioma/3-Results/Train and Test (Grading)/Incomplete/' + folder_name +'/missing(0-T1WI)/'+ missing_ratio +'/TCIA'
         # sub_Path = Path + '/Metrics/' + str(ite)
         # if not os.path.exists(sub_Path):
         #     os.makedirs(sub_Path)
