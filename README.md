@@ -31,6 +31,7 @@ matplotlib==2.2.5
 
 # Usage
 Make sure that all the required packages are installed, run the 'DISCERN.py' to check. if all required packages are properly installed, it will return the evaluation metrics of each iteration, including the area under the receiver operating characteristic (ROC) curve (AUC), accuracy (ACC), sensitivity (SEN), specificity (SPE), positive predictive value (PPV), negative predictive value (NPV), and F1 score. 
+![3](https://github.com/xinzhen-lab/Glioma-Prediction-on-Missing-MRI-Sequences/assets/131331281/d8e98676-d39c-4354-8fc5-a494feeb5367)
 
 # Note
 Other investigators are invited to share their data in order to further improve the generalization capability of the current model. The model should only be used to support clinical diagnosis by health care professionals as a complementary tool for predicting glioma grades and IDH mutation status with incomplete MRI sequences. Any responsibility for using this model and its results will rest solely by the health care professional using the model. Using it you should understand and agree that this tool is not responsible or liable for any claim, loss, or damage resulting from its use. While we try to keep the information on the tool as accurate as possible, we disclaim any warranty concerning its accuracy, timeliness, and completeness, and any other warranty, express or implied, including warranties of merchantability or fitness for a particular purpose.
