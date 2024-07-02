@@ -34,8 +34,10 @@ Make sure that all the required packages are installed, run the 'DISCERN.py' to 
 ![3](https://github.com/xinzhen-lab/Glioma-Prediction-on-Missing-MRI-Sequences/assets/131331281/150e5a9f-cac4-4476-8ec9-08de50b832db)
 
 Additionally, 'DISCERN_SHAP_interpretability.py' is built upon 'DISCERN.py' by incorporating SHAP interpretability to quantitatively assess the contribution of each radiomics feature to the model's output.
+<p align="center">
+  <img src ="https://github.com/xinzhen-lab/Glioma-Prediction-on-Missing-MRI-Sequences/assets/131331281/95192f6b-3313-466a-a012-e9afda69afc5">
+</p>
 
-![shap](https://github.com/xinzhen-lab/Glioma-Prediction-on-Missing-MRI-Sequences/assets/131331281/95192f6b-3313-466a-a012-e9afda69afc5
 
 # Note
 Other investigators are invited to share their data in order to further improve the generalization capability of the current model. The model should only be used to support clinical diagnosis by health care professionals as a complementary tool for predicting glioma grades and IDH mutation status with incomplete MRI sequences. Any responsibility for using this model and its results will rest solely by the health care professional using the model. Using it you should understand and agree that this tool is not responsible or liable for any claim, loss, or damage resulting from its use. While we try to keep the information on the tool as accurate as possible, we disclaim any warranty concerning its accuracy, timeliness, and completeness, and any other warranty, express or implied, including warranties of merchantability or fitness for a particular purpose.
