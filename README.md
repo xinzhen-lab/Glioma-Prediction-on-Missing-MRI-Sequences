@@ -12,7 +12,7 @@ The RISCN is capable of handling different clinical scenarios involving the miss
 
 
 <p align="center">
-  <img src ="https://github.com/xinzhen-lab/Glioma-Prediction-on-Missing-MRI-Sequences/assets/131331281/fffbb326-1868-4e5d-8430-7ff17c1b81ec">
+  <img src ="https://github.com/user-attachments/assets/ef55df86-5cbf-4695-a1e7-3dc6a2ebacca">
 </p>
 
 
@@ -31,7 +31,7 @@ matplotlib==2.2.5
 
 # Usage
 Make sure that all the required packages are installed, run the 'RISCN.py' to check. if all required packages are properly installed, it will return the evaluation metrics of each iteration, including the area under the receiver operating characteristic (ROC) curve (AUC), accuracy (ACC), sensitivity (SEN), specificity (SPE), positive predictive value (PPV), negative predictive value (NPV), F1 score, and total loss. The feature files for grading and IDH mutation status used for testing 'RISCN.py' are provided in the 'test_files' folder.
-![3](https://github.com/xinzhen-lab/Glioma-Prediction-on-Missing-MRI-Sequences/assets/131331281/150e5a9f-cac4-4476-8ec9-08de50b832db)
+![3](https://github.com/user-attachments/assets/07994576-94ba-4485-9ef9-0daf2943042d)
 
 Additionally, 'RISCN_SHAP_interpretability.py' is built upon 'RISCN.py' by incorporating SHAP interpretability to quantitatively assess the contribution of each radiomics feature to the model's output.
 <p align="center">
