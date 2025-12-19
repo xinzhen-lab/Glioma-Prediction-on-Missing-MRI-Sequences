@@ -1,6 +1,6 @@
 # Robust Deep Learning for Glioma Grading and IDH Mutation Status Prediction with Incomplete Multisequence MRI: A Large-Scale Multicenter Study.
 A robust incomplete-sequence completion network (RISCN) is developed to impute and integrate incomplete MRI sequences for glioma grading and IDH mutation status prediction.
-![1](https://github.com/xinzhen-lab/Glioma-Prediction-on-Missing-MRI-Sequences/assets/131331281/633a6026-fd9d-4a04-a61b-265f15e95844)
+![1](https://github.com/user-attachments/assets/c0962836-e2f9-426a-aee6-00dbf7a04326)
 
 
 # RISCN
